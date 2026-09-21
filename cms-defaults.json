@@ -1,0 +1,279 @@
+[
+  {
+    "id": "home",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "Ideas into market-ready bags.",
+      "text-1": "Product development, sourcing, manufacturing and quality control—coordinated by one experienced partner.",
+      "text-2": "A manufacturing partner that thinks with your product team.",
+      "text-3": "Shanghai Manfan supports retailers, wholesalers, brands and promotional companies with custom bag development for global markets. We bring design intent, practical construction and reliable production together from the beginning.",
+      "text-4": "Products built around your market",
+      "text-5": "A flexible product range supported by material sourcing, construction guidance and factory matching.",
+      "text-6": "Travel & Duffel Bags",
+      "text-7": "Backpacks",
+      "text-8": "Tote & Shopping Bags",
+      "text-9": "Cosmetic Bags",
+      "text-10": "Fashion & Shoulder Bags",
+      "text-11": "Children’s Bags",
+      "text-12": "Better decisions. Fewer surprises.",
+      "text-13": "We address material, structure, cost, durability and production consistency before they become expensive problems. The result is a clearer development process and a product built for commercial reality.",
+      "text-14": "From concept to delivery",
+      "text-15": "One accountable team coordinates the key stages of your bag program, keeping product intent and production reality aligned.",
+      "text-16": "Product Development",
+      "text-17": "Practical feedback on structure, materials, function and target cost before sampling begins.",
+      "text-18": "Material & Factory Matching",
+      "text-19": "Suitable suppliers selected for your category, quality expectations, volume and timeline.",
+      "text-20": "Sampling & Production",
+      "text-21": "Prototypes refined into production-ready specifications, followed through mass manufacture.",
+      "text-22": "Quality & Delivery",
+      "text-23": "In-process checks, final inspection, packing review and coordinated logistics support.",
+      "text-24": "What good development considers early",
+      "text-25": "Why design and manufacturing should begin together",
+      "text-26": "Early collaboration protects the original idea while reducing production compromises later.",
+      "text-27": "Is every new feature really worth adding?",
+      "text-28": "Good products balance user value with weight, cost, durability and manufacturing consistency.",
+      "text-29": "What makes customers trust a new bag brand?",
+      "text-30": "Trust grows through useful design, consistent quality and details that support a clear promise.",
+      "text-31": "Designed for demanding global programs",
+      "text-32": "Experience supporting customers across established consumer and retail markets.",
+      "text-33": "Have a bag concept? Let’s make it viable.",
+      "text-34": "Send a sketch, reference, specification—or simply the problem the product needs to solve."
+    }
+  },
+  {
+    "id": "about",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "Built around your product.",
+      "text-1": "Custom bag development, sourcing and manufacturing support for international brands and buying teams.",
+      "text-2": "A partner between your idea and production.",
+      "text-3": "Manfan works with overseas brands, retailers, wholesalers and promotional companies on custom bag development and sourcing. Our role is to connect design intent with the materials, construction and production decisions needed to bring it to market.",
+      "text-4": "From early concepts to sampling, supplier coordination and quality review, we help keep the product brief at the center of the process.",
+      "text-5": "Different businesses. Shared product challenges.",
+      "text-6": "Brands & product teams",
+      "text-7": "Turn a clear design direction into specifications, samples and a production plan.",
+      "text-8": "Retailers & wholesalers",
+      "text-9": "Coordinate bag categories, quality expectations and delivery requirements across a sourcing program.",
+      "text-10": "Promotional businesses",
+      "text-11": "Develop branded bags around campaign use, decoration requirements, budgets and launch dates.",
+      "text-12": "Practical thinking at every stage.",
+      "text-13": "Understand the purpose",
+      "text-14": "Start with the customer, intended use and commercial priorities before choosing materials or features.",
+      "text-15": "Make trade-offs visible",
+      "text-16": "Discuss the effects of structure, hardware and finishing on cost, weight and production consistency.",
+      "text-17": "Keep expectations aligned",
+      "text-18": "Use agreed specifications and sample feedback to guide production and quality discussions.",
+      "text-19": "Let’s shape your next bag program.",
+      "text-20": "Start with your product idea, priorities and target market."
+    }
+  },
+  {
+    "id": "travel",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Travel & Duffel Bags",
+      "body": "For weekends, workouts and journeys.\n\nDevelop travel bags around carrying comfort, usable capacity and the way your customers pack.\n\nCapacity & compartments\n\nHandles & shoulder straps\n\nReinforcement & hardware",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "backpacks",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Backpacks",
+      "body": "Made for the everyday carry.\n\nShape a backpack program for commuting, business or leisure, with practical organization and a clear brand identity.\n\nLaptop & internal storage\n\nBack-panel construction\n\nStraps & pocket layout",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "totes",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Tote & Shopping Bags",
+      "body": "A useful canvas for your brand.\n\nExplore everyday totes, retail shoppers and promotional bags with materials and finishes suited to your use case.\n\nFabric & lining\n\nHandle length & structure\n\nPrint, embroidery & labels",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "cosmetic",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Cosmetic Bags",
+      "body": "Small details. Everyday value.\n\nBuild cosmetic pouches and travel organizers around the essentials your customers carry, store and reach for.\n\nSize & internal organization\n\nLining & cleaning needs\n\nZippers & coordinated sets",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "fashion",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Fashion & Shoulder Bags",
+      "body": "From design intent to daily use.\n\nTranslate your brand aesthetic into a considered bag, balancing silhouette, materials, hardware and construction.\n\nShape & material selection\n\nHardware & closures\n\nStraps, lining & finishing",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "children",
+    "kind": "product",
+    "published": true,
+    "data": {
+      "title": "Children’s Bags",
+      "body": "Designed around smaller adventures.\n\nDevelop children’s bags with age, comfort and intended use in mind. Define destination-market testing requirements with your brief.\n\nDimensions & carrying comfort\n\nArtwork & character details\n\nMaterials & safety requirements",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "collections",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "A collection of possibilities.",
+      "text-1": "Find the right starting point for your next bag program. We help turn your brief into a product built around your brand, customers and market.",
+      "text-38": "Images illustrate category and design directions. Materials, specifications, minimum order quantities and lead times are confirmed for each project.",
+      "text-39": "Your brand. Your specifications.",
+      "text-40": "A sketch, reference image or product specification helps us understand what you want to create. Share your priorities so we can discuss the right development approach."
+    }
+  },
+  {
+    "id": "service",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "From concept to coordinated delivery.",
+      "text-1": "A practical development process connecting your product brief, sourcing, sampling, production and quality requirements.",
+      "text-2": "Support that starts where your team needs it.",
+      "text-3": "Bring a developed specification for OEM production, or an early concept that needs further product development. The project scope is agreed around your brief.",
+      "text-4": "What to bring",
+      "text-5": "Reference images, intended use, quantity, target market and delivery window. If some details are undecided, tell us what matters most.",
+      "text-6": "Brief & feasibility",
+      "text-7": "Clarify what the bag needs to do and the constraints that shape development.",
+      "text-8": "Review references, target users and destination market",
+      "text-9": "Discuss materials, dimensions, quantities and target cost",
+      "text-10": "Identify questions to resolve before sampling",
+      "text-11": "Materials & sourcing",
+      "text-12": "Match materials and manufacturing resources to the project requirements.",
+      "text-13": "Review fabrics, linings, trims and branding options",
+      "text-14": "Consider construction and supplier suitability",
+      "text-15": "Confirm material choices and required testing scope",
+      "text-16": "Sampling & refinement",
+      "text-17": "Use prototypes to turn assumptions into decisions.",
+      "text-18": "Review appearance, fit, function and workmanship",
+      "text-19": "Record feedback against the agreed brief",
+      "text-20": "Confirm the approved sample and specifications",
+      "text-21": "Production & quality coordination",
+      "text-22": "Follow the agreed product requirements through manufacture.",
+      "text-23": "Coordinate production details and review checkpoints",
+      "text-24": "Check workmanship and specification consistency",
+      "text-25": "Agree inspection criteria and handling of discrepancies",
+      "text-26": "Packing & delivery coordination",
+      "text-27": "Prepare the finished program for its destination.",
+      "text-28": "Confirm labeling, packing and carton requirements",
+      "text-29": "Coordinate inspection and shipping documentation needs",
+      "text-30": "Agree delivery arrangements for the specific order",
+      "text-31": "Project details are confirmed individually.",
+      "text-32": "Minimum order quantities, sample fees, lead times, testing requirements and shipping terms depend on the design, materials, order volume and destination. Share your brief so these can be discussed together.",
+      "text-33": "Let’s shape your next bag program.",
+      "text-34": "Start with your product idea, priorities and target market."
+    }
+  },
+  {
+    "id": "design",
+    "kind": "article",
+    "published": true,
+    "data": {
+      "title": "Why design and manufacturing should begin together",
+      "body": "Start with the use case\n\nA bag brief should explain who will use the product, what they carry and where they carry it. A commuter backpack and a weekend bag may share materials, but their organization, access and carrying requirements are different.\n\nReview the construction before the sample\n\nSeams, linings, reinforcement and hardware affect how a design can be made. Reviewing them early creates room to adjust the construction while preserving the visual direction.\n\nTurn feedback into specifications\n\nRecord dimensions, materials, colors, branding positions and functional requirements. When a sample changes, update the specification too. The approved sample and written requirements should tell the same story.\n\nQuestions for your next brief\n\nWhat must the bag do well? Which features are essential? Which design details can change if they add unnecessary weight or complexity? Discuss these questions before committing to the first sample.",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "features",
+    "kind": "article",
+    "published": true,
+    "data": {
+      "title": "Is every new feature worth adding?",
+      "body": "Give each feature a job\n\nA pocket, extra zipper or detachable strap should solve a clear user problem. Start with the items the customer carries and the moments when they need access to them.\n\nConsider the whole product\n\nA feature can affect more than its component cost. It may add assembly steps, weight, points of wear or inspection requirements. Evaluate the product as a whole rather than approving each addition in isolation.\n\nTest the trade-off in a sample\n\nUse the sample to review access, comfort and organization with realistic contents. Check whether the feature makes the bag easier to use and whether a simpler construction could achieve the same purpose.\n\nA practical decision rule\n\nKeep features that support the core use case and brand promise. Simplify those that create complexity without a clear user benefit. Record the reasons so later revisions do not undo the decision.",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "quality",
+    "kind": "article",
+    "published": true,
+    "data": {
+      "title": "Building trust through product consistency",
+      "body": "Define what customers should experience\n\nBrand trust depends on the product matching the promise. Translate that promise into specific expectations for materials, feel, function and finishing rather than relying on the word “quality.”\n\nMake the sample review specific\n\nCheck the visible details as well as practical use: zipper access, handle comfort, lining fit, label placement and consistency of finishing. Document the revisions and approval criteria.\n\nKeep production aligned with approval\n\nA sample is useful only when production teams understand what was approved. Maintain current specifications and agree how variations or issues will be reviewed before goods are released.\n\nUse feedback in the next development cycle\n\nCustomer feedback can show where the design or construction needs attention. Separate isolated defects from recurring usability concerns, then bring the findings into the next product brief.",
+      "image": "",
+      "summary": ""
+    }
+  },
+  {
+    "id": "insights",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "Better questions. Better bags.",
+      "text-1": "Practical perspectives on design, manufacturing and product consistency for teams developing their next bag collection.",
+      "text-29": "Let’s shape your next bag program.",
+      "text-30": "Start with your product idea, priorities and target market."
+    }
+  },
+  {
+    "id": "contact",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "Let’s start a conversation.",
+      "text-1": "A product question, a sourcing challenge or an early idea — tell us what you are working on.",
+      "text-2": "Talk to us about your next step.",
+      "text-3": "For product questions, sourcing discussions or a new bag concept, share a few details with our team.",
+      "text-4": "Ready with product requirements?",
+      "text-5": "Send an inquiry"
+    }
+  },
+  {
+    "id": "start-project",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "text-0": "Your next bag starts here.",
+      "text-1": "Share your product direction and commercial priorities. Prepare a project brief to send to the Manfan team.",
+      "text-2": "A clearer brief starts a better conversation.",
+      "text-3": "Tell us what you want to create and which decisions are still open. You do not need a finished technical specification to begin.",
+      "text-4": "Useful references to attach",
+      "text-5": "Product sketches or reference images",
+      "text-6": "Dimensions and feature requirements",
+      "text-7": "Logo artwork and color references",
+      "text-8": "Material preferences or an existing specification",
+      "text-9": "Add these files to your email after preparing the draft.",
+      "text-10": "What happens next?",
+      "text-11": "Your brief gives the team a starting point for discussing feasibility, development scope and the information needed for a quotation.",
+      "text-12": "Quantities, pricing and schedules are confirmed after reviewing the project.",
+      "text-13": "Tell us about your bag"
+    }
+  },
+  {
+    "id": "settings",
+    "kind": "page",
+    "published": true,
+    "data": {
+      "email": "info@mffind.com",
+      "location": "Shanghai, China"
+    }
+  }
+]

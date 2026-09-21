@@ -3,11 +3,14 @@ const menu=document.querySelector('.menubtn'),nav=document.querySelector('.navli
 function closeMenu(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')}
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus()}});
-const form=document.querySelector('form');
-if(form){const draft=document.getElementById('draft'),out=document.getElementById('email-draft'),status=document.getElementById('form-status');
-function prepare(){if(!form.reportValidity())return null;const lines=['Hello Manfan,',''];for(const [key,value] of new FormData(form))if(value.trim())lines.push(key+': '+value.trim());lines.push('','Thank you.');const text=lines.join('\n');out.value=text;draft.hidden=false;status.textContent='Your draft is ready. Review it below before sending.';return text}
-form.addEventListener('submit',e=>{e.preventDefault();if(prepare())out.focus()});
-document.getElementById('open-email').addEventListener('click',()=>{const text=out.value;window.location.href='mailto:info@mffind.com?subject='+encodeURIComponent(form.dataset.subject)+'&body='+encodeURIComponent(text);status.textContent='Email draft opened in your mail app. Nothing has been sent by this website. If no app opens, copy the draft and email info@mffind.com.'});
-document.getElementById('copy-draft').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(out.value);status.textContent='Draft copied. Paste it into an email to info@mffind.com.'}catch(e){out.focus();out.select();status.textContent='Draft selected. Press Ctrl+C (Windows) or Command+C (Mac) to copy.'}});
-form.addEventListener('input',()=>{if(!draft.hidden){draft.hidden=true;status.textContent='Details changed. Prepare the draft again to include your updates.'}});
+const form=document.querySelector('form[data-inquiry]');
+if(form){
+ const status=document.getElementById('form-status'),button=form.querySelector('[type="submit"]');
+ form.addEventListener('submit',async e=>{
+  e.preventDefault();if(!form.reportValidity())return;button.disabled=true;status.textContent='Sending…';
+  const fields=new FormData(form),data={};for(const [k,v] of fields)if(!['consent','website'].includes(k))data[k]=v;
+  try{const r=await fetch('/api/backend?action=inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:form.dataset.inquiry,data,website:fields.get('website'),consent:fields.has('consent')})});const result=await r.json();if(!r.ok)throw new Error(result.error);status.textContent='Thank you. Your inquiry has been received. Reference: '+result.id;form.reset();}
+  catch(error){status.textContent=(error.message||'Unable to send.')+' Your details have not been cleared. You can also email info@mffind.com.';}
+  finally{button.disabled=false;}
+ });
 }
