@@ -11,7 +11,7 @@ export function validateContent(b){
  if(!/^[a-z0-9_-]{1,90}$/.test(b.id)||!['page','product','article'].includes(b.kind)||typeof b.published!=='boolean'||!b.data||Array.isArray(b.data)||typeof b.data!=='object')throw failure(400,'Invalid content.');
  if(JSON.stringify(b.data).length>100000)throw failure(400,'Content is too long.');
  if(b.kind==='page'){for(const [k,v] of Object.entries(b.data))if(!/^[a-z0-9_-]+$/.test(k)||typeof v!=='string'||v.length>10000)throw failure(400,'Invalid page field.');}
- else{if(typeof b.data.title!=='string'||!b.data.title.trim())throw failure(400,'Title is required.');for(const k of Object.keys(b.data))if(!['title','body','image','summary'].includes(k)||typeof b.data[k]!=='string')throw failure(400,'Invalid content field.');if(b.data.image&&!/^https:\/\/[^\s]+$/.test(b.data.image)&&!/^\/(?!\/)[a-zA-Z0-9/_.-]+$/.test(b.data.image))throw failure(400,'Use an HTTPS image URL.');}
+ else{if(typeof b.data.title!=='string'||!b.data.title.trim())throw failure(400,'Title is required.');for(const k of Object.keys(b.data))if(!['title','body','image','summary','lead','features'].includes(k)||typeof b.data[k]!=='string')throw failure(400,'Invalid content field.');if(b.data.image&&!/^https:\/\/[^\s]+$/.test(b.data.image)&&!/^\/(?!\/)[a-zA-Z0-9/_.-]+$/.test(b.data.image))throw failure(400,'Use an HTTPS image URL.');}
  return {id:b.id,kind:b.kind,published:b.published,data:b.data,updated_at:new Date().toISOString()};
 }
 export default async function handler(req,res){

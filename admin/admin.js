@@ -29,7 +29,15 @@ function editContent(row){dirty=false;const box=$('#editor');box.replaceChildren
  if(row.kind==='page'){for(const [k,v] of Object.entries(row.data)){inputs[k]=field(form,k==='email'?'联系邮箱':k==='location'?'公司所在地':v.slice(0,65),v,k==='email'?'email':'textarea');}}
  else{
   inputs.title=field(form,'英文标题',row.data.title);inputs.title.required=true;
-  inputs.summary=field(form,'摘要',row.data.summary,'textarea');inputs.body=field(form,'英文正文（空行分段）',row.data.body,'textarea');inputs.body.style.minHeight='300px';inputs.image=field(form,'图片地址',row.data.image);
+  inputs.summary=field(form,'摘要（可选）',row.data.summary,'textarea');
+  if(row.kind==='product'){
+   const parts=(row.data.body||'').split(/\n\s*\n/).filter(Boolean),structured=Object.hasOwn(row.data,'lead');
+   inputs.lead=field(form,'引导语（加粗显示）',structured?row.data.lead:parts.shift());
+   inputs.body=field(form,'产品正文（空行分段）',structured?row.data.body:(parts.shift()||''),'textarea');
+   inputs.features=field(form,'产品特点（每行一项，自动显示项目符号）',structured?row.data.features:parts.join('\n'),'textarea');
+   form.append(el('p','系列编号、卡片边距和按钮样式由网站自动保留，无需在正文中填写。'));
+  }else inputs.body=field(form,'英文正文（空行分段）',row.data.body,'textarea');
+  inputs.body.style.minHeight='200px';inputs.image=field(form,'图片地址（留空保留原有产品图）',row.data.image);
   const label=el('label','上传图片（JPG / PNG / WebP，最大 2 MB）'),file=el('input','',{type:'file',accept:'image/jpeg,image/png,image/webp'});label.append(file);form.append(label);
   file.onchange=async()=>{const f=file.files[0];if(!f)return;if(f.size>2097152){status.textContent='图片不能超过 2 MB。';return;}file.disabled=true;try{status.textContent='正在上传图片…';const base64=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result.split(',')[1]);r.onerror=reject;r.readAsDataURL(f);});const result=await api('upload',{type:f.type,base64});inputs.image.value=result.url;dirty=true;status.textContent='图片已上传，请保存内容。';}catch(e){error(e);}finally{file.disabled=false;}};
  }
