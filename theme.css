@@ -58,11 +58,31 @@ input, select, textarea { background-color: var(--warm-white); color: var(--coff
 .about-badge { background: var(--oat); color: var(--coffee); }
 .service:hover { background: var(--oat); color: var(--coffee); }
 .service:hover h3, .service:hover p { color: var(--coffee); opacity: 1; }
-.insight-top, .insight:nth-child(2) .insight-top, .insight:nth-child(3) .insight-top {
-  background: var(--oat); border-top: 3px solid var(--sage);
-}
-.insight-top span, .insight-top b { color: var(--coffee); }
+/* Distinct editorial cards within the four-color brand palette. */
+.insights { background: var(--warm-white); }
+.insight { border: 1px solid var(--oat); }
+.insight-top { background: var(--coffee); border-top: 0; }
+.insight-top span, .insight-top b { color: var(--warm-white); }
 .insight-top:after { border-color: var(--sage); }
+.insight:nth-child(2) .insight-top { background: var(--sage); }
+.insight:nth-child(3) .insight-top { background: var(--oat); }
+.insight:nth-child(2) .insight-top span,
+.insight:nth-child(2) .insight-top b,
+.insight:nth-child(3) .insight-top span,
+.insight:nth-child(3) .insight-top b { color: var(--coffee); }
+.insight:nth-child(2) .insight-top:after { border-color: rgba(59,48,43,.3); }
+/* A framed inquiry panel remains separate from the oat-colored footer. */
+.contact-band { background: var(--warm-white); padding: 40px 0 64px; }
+.contact-band .container {
+  background: var(--oat); border-left: 4px solid var(--sage);
+  padding: 40px; gap: 32px;
+}
+.contact-band .container > div { min-width: 0; }
+.contact-band .btn { flex-shrink: 0; }
+@media(max-width:680px) {
+  .contact-band { padding: 24px 0 40px; }
+  .contact-band .container { padding: 28px 22px; }
+}
 footer { background: var(--oat); color: var(--coffee); }
 .footer-brand, .footer-col h3, .footer-social a { color: var(--coffee); }
 .footer-social a, .copyright { border-color: var(--sage); }
